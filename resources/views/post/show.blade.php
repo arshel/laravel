@@ -12,6 +12,8 @@
 @section('content')
     <a href="/post" class="btn btn-default">go back</a>
     <h1>{{$post->title}}</h1>
+    <img style="width: 50%" src="/storage/cover_images/{{$post->cover_image}}" alt="">
+
 
     <div>
         {!!$post->body!!}

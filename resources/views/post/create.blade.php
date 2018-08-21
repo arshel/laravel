@@ -10,7 +10,7 @@
 
 @section('content')
     <h1>create post</h1>
-    {!! Form::open(['action' => 'Postcontroller@store', 'method' => 'POST']) !!}
+    {!! Form::open(['action' => 'Postcontroller@store', 'method' => 'POST', 'enctype' => 'multipart/form-data']) !!}
     <div class="form-group">
         {{form::label('title', 'Title')}}
         {{form::text('title', '', ['class' => 'form-control', 'placeholder' => 'title'])}}
@@ -21,6 +21,10 @@
         {{form::label('body', 'body')}}
         {{form::textarea('body', '', ['id' =>'article-ckeditor','class' => 'form-control', 'placeholder' => 'bodytext'])}}
 
+    </div>
+
+    <div class="form-group">
+        {{form::file('cover_image')}}
     </div>
     {{form::submit('submit', ['class'=>'btn btn-primary'])}}
     {!! Form::close() !!}

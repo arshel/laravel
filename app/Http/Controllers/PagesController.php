@@ -3,17 +3,20 @@
 namespace App\Http\Controllers;
 use App;
 use DB;
+use App\User;
 use Illuminate\Http\Request;
 
 class PagesController extends Controller
 {
+
     public function index()
     {
 
 
         $title = 'welcome to Laravel';
+
         return view('pages.index')->with('title', $title);
-       // return view('pages.index', compact('title'));
+
     }
 
 

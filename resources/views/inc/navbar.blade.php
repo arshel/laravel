@@ -41,7 +41,7 @@
                         <a class="nav-link" href="/services">services</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="/post">post</a>
+                        <a class="nav-link" href="/post">blog</a>
 
 
                 </ul>
